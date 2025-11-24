@@ -1,0 +1,54 @@
+services:
+  php:
+    container_name: asyafood_backend_php
+    networks:
+      - default
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    entrypoint: "tail -f /dev/null"
+  web:
+    container_name: asyafood_backend_web
+    networks:
+      - default
+      - global_reverse_proxy
+    volumes:
+      - ./:/var/www/html
+    working_dir: /var/www/html
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: docker/Dockerfile
+    depends_on:
+      - php
+      - db
+    labels:
+      caddy: backend.asyafood.fr
+      caddy.reverse_proxy: "{{upstreams 80}}"
+
+  db:
+    container_name: asyafood_backend_db
+    image: mysql:8.0
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: asya-food
+      MYSQL_USER: laura
+      MYSQL_PASSWORD: laura1409
+    volumes:
+      - db_data:/var/lib/mysql
+    networks:
+      - default
+
+networks:
+  default:
+    driver: bridge
+  global_reverse_proxy:
+    external: true
+
+volumes:
+  db_data:

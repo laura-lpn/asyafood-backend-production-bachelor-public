@@ -1,0 +1,124 @@
+id : ID
+ID : ID
+
+email : Email
+Email : Email
+
+Name : Nom
+name : Nom
+
+Slug : Slug
+
+User : Utilisateur
+users : Utilisateurs
+Users : Utilisateurs
+
+username : Username
+Username : Username
+
+password : Mot de passe
+Password : Mot de passe
+
+roles : Rôles
+Roles : Rôles
+
+recipes : Recettes
+Recipes : Recettes
+Recipe : Recette
+
+shoppingLists : Listes de course
+Shopping Lists : Listes de course
+
+createdAt : Date de création
+Created At : Date de création
+
+ingredientRecipe : Ingrédient sur recette
+IngredientRecipe : Ingrédient sur recette
+ingredientRecipes : Ingrédients sur recette
+
+TimeTypes : Types de temps
+TimeType : Type de temps
+Time Type : Type de temps
+
+TimeRecipes : Temps sur recette
+TimeRecipe : Temps sur recette
+
+Steps : Étapes de préparation
+Step : Étape de préparation
+
+Categories : Catégories
+Category : Catégorie
+
+Ingredients : Ingrédients
+Ingredient : Ingrédient
+
+ShoppingLists : Listes de course
+ShoppingList : Liste de course
+
+Description : Description
+description : Description
+
+Meta Description : Méta description
+
+Sequence : Étape n°
+
+Quantity : Quantité
+
+Value : Valeur
+
+Is Liquid : Liquide
+
+Unit : Unité
+Units : Unités
+
+lenght : Durée
+Lenght : Durée
+
+Validate : validé
+
+Color : Couleur
+
+Motif File : Motif fichier
+Alt Motif : Texte alternatif motif
+Motif Name : Nom motif
+Motif Updated At : Update motif
+
+Image File : Image fichier
+Alt Image : Texte alternatif image
+Image Name : Nom image
+Image Updated At : Update image
+
+Print File : Pdf
+
+Print Name : Nom Pdf
+Print Updated At : Update Pdf
+
+add : Ajouter
+show : Voir
+
+'vich_uploader.link.download' : Lien de téléchargement
+
+Type : Type
+Genre : Genre
+
+Viande : Viande
+Poisson : Poisson
+Autre : Autre
+
+Entrée: Entrée
+Plat : Plat
+Dessert : Dessert
+Sauce : Sauce
+
+Times : Temps
+
+Modulo : Modulo
+
+Unit Modulo : Unité modulo
+
+Info : Information/Astuce
+
+Copyright : Copyright
+
+Name Plurial : Nom pluriel
+Is Indexed : Indexé

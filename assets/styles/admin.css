@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #FFFDF8;
+    --sidebar-bg: #FFFDF8;
+    --body-color: #121212;
+    --text-color: #121212;
+    --primary: #BD1000;
+    --font-family-sans-serif: montserrat, sans-serif;
+    --color-primary: #BD1000;
+    --bs-btn-border-color: #BD1000;
+    --link-color: #BD1000;
+    --button-shadow: none;
+    --table-hover-cell-bg: #d69f0926;
+    --form-input-border-color: #d69f09;
+    --sidebar-menu-active-item-bg: #FFFDF8;
+    --sidebar-menu-color: #121212;
+    --sidebar-menu-icon-color: #121212;
+    --sidebar-menu-header-color: #d69f09;
+    --dropdown-settings-icon-color : #d69f09;
+    --dropdown-link-color:var(--primary);
+    --dropdown-icon-color:var(--primary);
+    --dropdown-color:var(--body-color);
+    --text-muted :#12121295;
+    --user-avatar-icon-color:#d69f09;
+    --user-avatar-icon-bg :var(--white);
+    --form-type-autocomplete-dropdown-input-wrapper-bg:var(--white);
+    --form-input-text-color:var(--body-color);
+    --form-type-autocomplete-close-button-bg:var(--body-color);
+    --form-input-hover-border-color:var(--color-primary);
+    --form-input-hover-shadow:none;
+    --form-type-autocomplete-dropdown-active-item-bg:#d69f0926;
+    --form-type-autocomplete-close-button-hover-bg:var(--color-primary);
+    --datalist-label-color:#d69f09;
+    --datalist-value-color:var(--body-color);
+    --badge-secondary-bg :var(--color-primary);
+    --badge-secondary-color:var(--white);
+    --content-search-icon-color:var(--body-color);
+    --table-thead-marker-color:#d69f09;
+    --pagination-disabled-color:#12121295;
+    --button-active-shadow: none;
+    --dropdown-toggle-color:var(--body-color);
+    --form-switch-checked-bg:#d69f09;
+    --form-switch-border-color:var(--body-color);
+    --dropdown-link-hover-bg:var(--white);
+    --gray-300:var(--white);
+    --gray-600:var(--body-color);
+    --datagrid-noresults-placeholder-bg:var(--table-hover-cell-bg);
+    --link-hover-color:var(--body-color);
+    --resize-handler-hover-bg:var(--color-primary);
+    --form-type-check-input-checked-bg:var(--color-primary);
+    --table-selected-cell-bg:#d69f0926;
+
+}
+.plugin-dropdown_input.focus .ts-dropdown .dropdown-input {
+    box-shadow: none;
+    border-color: #d69f09;
+}

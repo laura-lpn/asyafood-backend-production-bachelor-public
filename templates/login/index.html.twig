@@ -1,0 +1,30 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Connexion{% endblock %}
+
+{% block body %}
+<div class="shadow-main rounded-main mx-auto w-4/5 flex flex-col py-6 px-4 items-center md:3/5">
+    <h1 class="font-bold font-second text-center text-red text-3xl mb-8" style="font-weight:700">Se connecter au dashboard</h1>
+    {% if error %}
+    <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
+    {% endif %}
+
+    <form action="{{ path('app_home') }}" method="post" class="w-3/5 flex flex-col">
+        <input type="email" id="username" name="_username" value="{{ last_username }}" placeholder="Email"
+        class="border-2 border-black rounded-input bg-white
+        px-2 py-3 my-4
+        placeholder:text-yellow
+        focus-visible:border-red"/>
+        <input type="password" id="password" name="_password" placeholder="Mot de passe"
+        class="border-2 border-black rounded-input bg-white
+        px-2 py-3 my-4
+        placeholder:text-yellow
+        focus-visible:border-yellow"/>
+        <input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+        <button type="submit"
+        class="w-full text-white bg-red rounded-main py-3 my-4
+        hover:bg-yellow"
+        >Connexion</button>
+    </form>
+</div>
+{% endblock %}

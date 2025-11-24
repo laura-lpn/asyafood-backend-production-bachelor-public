@@ -1,0 +1,51 @@
+vich_uploader:
+  db_driver: orm
+
+  metadata:
+    type: attribute
+  
+  mappings:
+    recipes_images:
+      uri_prefix: /recipes/images/recipes_images
+      upload_destination: "%kernel.project_dir%/public/recipes/images/recipes_images"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+      inject_on_load: false
+      delete_on_update: true
+      delete_on_remove: true
+
+    recipes_prints:
+      uri_prefix: /recipes/pdf/recipes_prints
+      upload_destination: "%kernel.project_dir%/public/recipes/pdf/recipes_prints"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+      inject_on_load: false
+      delete_on_update: true
+      delete_on_remove: true
+
+    categories_images:
+      uri_prefix: /categories/images/categories_images
+      upload_destination: "%kernel.project_dir%/public/categories/images/categories_images"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+      inject_on_load: false
+      delete_on_update: true
+      delete_on_remove: true
+
+    categories_motifs:
+       uri_prefix: /categories/images/categories_motifs
+       upload_destination: "%kernel.project_dir%/public/categories/motifs/categories_motifs"
+       namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+       inject_on_load: false
+       delete_on_update: true
+       delete_on_remove: true
+    
+    ingredients_images:
+      uri_prefix: /ingredients/images/ingredients_images
+      upload_destination: "%kernel.project_dir%/public/ingredients/images/ingredients_images"
+      namer: Vich\UploaderBundle\Naming\SmartUniqueNamer
+
+      inject_on_load: false
+      delete_on_update: true
+      delete_on_remove: true

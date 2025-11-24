@@ -1,0 +1,17 @@
+<h1 style="color: #BD1000">Réinitialisez votre mot de passe</h1>
+
+<p>Pour réinitialiser votre mot de passe, cliquez sur le lien :</p>
+
+{% if resetToken is not null %}
+    <a href="https://asyafood.fr/modification-du-mot-de-passe/{{ resetToken.token }}">https://asyafood.fr/modification-du-mot-de-passe/{{ resetToken.token }}</a>
+{% else %}
+    <p>Lien invalide.</p>
+{% endif %}
+
+{% if resetToken is not null %}
+    <p>Ce lien expire dans {{ resetToken.expirationMessageKey|trans(resetToken.expirationMessageData, 'ResetPasswordBundle') }}.</p>
+{% endif %}
+
+<img src="{{ asset('img/logo.svg') }}" alt="logo asya-food" style="height: 80px;">
+<h3 style="color: #BD1000">Asya Food</h3>
+<p style="color: #d69f09">Pour tout problème, contactez-nous sur support@asyafood.fr</p>
