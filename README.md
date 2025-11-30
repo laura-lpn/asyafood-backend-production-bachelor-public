@@ -62,9 +62,9 @@ L’API utilise **JWT (JSON Web Token)** pour sécuriser l’accès aux routes p
 - Tailwind CSS
 
 ---
-## 👩‍💻 Auteure
 
-**Laura Lepannetier**  
+ ## Auteure
+ 👩‍💻 Laura Lepannetier
 Projet réalisé dans le cadre du Bachelor Développement Web.
 
 [GitHub](https://github.com/laura-lpn)
